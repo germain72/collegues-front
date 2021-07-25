@@ -1,4 +1,6 @@
 language: node_js
+before_install:
+  - gem install cocoapods -v '0.32.1'
 node_js:
   - "14"
 before_script:
