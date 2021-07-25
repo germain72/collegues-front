@@ -6,9 +6,9 @@ node_js:
 before_script:
   - "npm install"
 deploy:
-  api_key: $GITHUB_TOKEN
-  local-dir: dist/collegues-front
   provider: pages
+  github-token: $GITHUB_TOKEN
+  local-dir: dist/collegues-front
   skip-cleanup: true
   on:
     branch: main
