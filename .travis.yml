@@ -1,6 +1,6 @@
-language: node_js
 before_install:
   - git submodule update --init --recursive
+language: node_js
 node_js:
   - "14"
 before_script:
@@ -10,11 +10,8 @@ deploy:
   local-dir: dist/collegues-front
   provider: pages
   skip-cleanup: true
-  true:
+  on:
     branch: main
-language: node_js
-node_js:
-  - "14"
 notifications:
   email: false
 script: "npm run build"
